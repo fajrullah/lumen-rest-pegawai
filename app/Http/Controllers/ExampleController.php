@@ -76,9 +76,10 @@ class ExampleController extends Controller
     public function updateDataKaryawan(Request $request, $id){
         $data = Karyawan::where('id',$id)->first();
         $data->nama_karyawan = $request->input('nama_karyawan');
+        $data->jabatan = $request->input('jabatan');
+        $data->divisi = $request->input('divisi');
         $data->save();
-    
-        return response('Success');
+        return response($data);
     }
 
     public function updateDataDivisi(Request $request, $id){

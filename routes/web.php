@@ -12,7 +12,11 @@
 */
 
 $router->get('/', function () use ($router) {
-    return $router->app->version();
+    return array(
+                    'Version' => $router->app->version(),
+                    'PUT/deletel/GET' => '/[divisi|jabatan|karyawan]/$1',
+                    'POST/GET' => '/[divisi|jabatan|karyawan]'
+    );
 });
 
 /**

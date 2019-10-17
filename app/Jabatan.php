@@ -14,6 +14,6 @@ class Jabatan extends Model
     //  public function karyawan() {
     //     return $this->hasOne('App\Karyawan', 'foreign_key', 'id');
     //   }
-
+    
     
 }

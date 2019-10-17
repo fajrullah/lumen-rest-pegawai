@@ -17,11 +17,11 @@ class Karyawan extends Model
     //     return $this->belongsTo('App\Jabatan', 'foreign_key', 'id');
     //   }
     public function jabatan() {
-      return $this->hasOne('App\Jabatan', 'id');
+      return $this->hasOne('App\Jabatan','id', 'jabatan');
     }
 
     public function divisi() {
-      return $this->hasOne('App\Divisi', 'id');
+      return $this->hasOne('App\Divisi', 'id','jabatan');
     }
     //   public function divisi() {
     //     return $this->hasOne(Divisi::class);

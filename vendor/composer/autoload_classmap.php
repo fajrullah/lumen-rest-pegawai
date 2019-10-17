@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
+    'App\\Divisi' => $baseDir . '/app/Divisi.php',
     'App\\Events\\Event' => $baseDir . '/app/Events/Event.php',
     'App\\Events\\ExampleEvent' => $baseDir . '/app/Events/ExampleEvent.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
@@ -14,8 +15,10 @@ return array(
     'App\\Http\\Controllers\\ExampleController' => $baseDir . '/app/Http/Controllers/ExampleController.php',
     'App\\Http\\Middleware\\Authenticate' => $baseDir . '/app/Http/Middleware/Authenticate.php',
     'App\\Http\\Middleware\\ExampleMiddleware' => $baseDir . '/app/Http/Middleware/ExampleMiddleware.php',
+    'App\\Jabatan' => $baseDir . '/app/Jabatan.php',
     'App\\Jobs\\ExampleJob' => $baseDir . '/app/Jobs/ExampleJob.php',
     'App\\Jobs\\Job' => $baseDir . '/app/Jobs/Job.php',
+    'App\\Karyawan' => $baseDir . '/app/Karyawan.php',
     'App\\Listeners\\ExampleListener' => $baseDir . '/app/Listeners/ExampleListener.php',
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',
     'App\\Providers\\AuthServiceProvider' => $baseDir . '/app/Providers/AuthServiceProvider.php',

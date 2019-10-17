@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateKaryawanTable extends Migration
+class AddAttsToKaryawan extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,8 @@ class CreateKaryawanTable extends Migration
      */
     public function up()
     {
-        Schema::create('karyawan', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->string('nama_karyawan');
-            $table->integer('jabatan');
-            $table->integer('divisi');
-            $table->timestamps();
+        Schema::table('karyawan', function (Blueprint $table) {
+            //
         });
     }
 
@@ -29,6 +25,8 @@ class CreateKaryawanTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('karyawan');
+        Schema::table('karyawan', function (Blueprint $table) {
+            //
+        });
     }
 }

@@ -29,7 +29,7 @@ class ExampleController extends Controller
     }
 
     public function getAllKaryawan(){
-        $data = Karyawan::all();
+        $data = Karyawan::with('jabatan','divisi')->get();
         return response($data);
     }
     
@@ -66,6 +66,8 @@ class ExampleController extends Controller
     public function saveDataKaryawan(Request $request){
         $data = new Karyawan();
         $data->nama_karyawan = $request->input('nama_karyawan');
+        $data->jabatan = $request->input('jabatan');
+        $data->divisi = $request->input('divisi');
         $data->save();
     
         return response('Success');
